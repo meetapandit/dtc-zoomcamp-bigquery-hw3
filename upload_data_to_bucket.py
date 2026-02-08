@@ -6,15 +6,21 @@ from google.cloud import storage
 from google.api_core.exceptions import NotFound, Forbidden
 import time
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Change this to your bucket name
-BUCKET_NAME = "dezoomcamp_hw3_2025"
+BUCKET_NAME = "dezoomcamp_hw3_2026_mp"
 
 # If you authenticated through the GCP SDK you can comment out these two lines
-CREDENTIALS_FILE = "gcs.json"
-client = storage.Client.from_service_account_json(CREDENTIALS_FILE)
+# CREDENTIALS_FILE = "/workspaces/dtc-zoomcamp-bigquery-hw3/credentials/gcs.json"
+# client = storage.Client.from_service_account_json(CREDENTIALS_FILE)
 # If commented initialize client with the following
 # client = storage.Client(project='zoomcamp-mod3-datawarehouse')
+
+client = storage.Client()
 
 
 BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-"

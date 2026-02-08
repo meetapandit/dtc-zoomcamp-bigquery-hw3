@@ -207,9 +207,12 @@ marimo/_lsp/
 __marimo__/
 
 # GCP credentials
-gcs.json
-*.credentials.json
+credentials/
+*.json
+!package.json
+!package-lock.json
 
 # Data files
 *.parquet
 *.csv
+uv.lock
