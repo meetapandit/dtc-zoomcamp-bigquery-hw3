@@ -1,0 +1,7 @@
+{
+  "name": "DTC Zoomcamp BigQuery HW3",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/anthropics/devcontainer-feature/claude-code:latest": {}
+  }
+}
